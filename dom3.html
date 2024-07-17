@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM3</title>
+</head>
+<body>
+    <h1 id="one"></h1>
+    <p id="two" onclick="Try()"></p>
+    <script>
+        //diff b/w textcontent and innerhtml
+        //inner html will use utilize html   tags 
+        function Try() {
+            var p1 = document.getElementById("two")
+            p1.style.color="blue"; 
+        }
+        var h1ref = document.getElementById("one");
+        h1ref.innerHTML = "<i>Welcome to Pentagonspace</i>"
+        h1ref.style.border = "5px solid black"
+        h1ref.style.textAlign="center";
+
+
+        var pref = document.getElementById("two")
+        pref.innerHTML = "welcome to js class"
+        pref.style.color = "red";
+        pref.style.textAlign = 'center'; 
+        pref.style.backgroundColor = "yellow";
+    </script>
+</body>
+</html>

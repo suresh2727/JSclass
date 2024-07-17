@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM4</title>
+</head>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quidem inventore voluptas iste exercitationem asperiores repudiandae natus? Autem delectus facilis perferendis error rem, voluptatibus ipsa, expedita veniam obcaecati deserunt amet.</p>
+    <p class="p1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae unde fugiat animi quaerat beatae doloribus est ex iure velit sunt! Minima, quam. Odit provident porro facere consequuntur. Exercitationem, aut error.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, vero? Tenetur ratione, sequi nam, excepturi cumque sapiente eum autem laboriosam vel ullam omnis laborum ipsam natus dolorum tempore ea et?</p>
+
+    <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quos minima vel minus esse. Similique esse id error odit! Sequi labore beatae neque alias dolorum doloribus sit? Laudantium, architecto ducimus?</p>
+    <script>
+        var pararef = document.getElementsByClassName("p1")
+        console.log(pararef);
+
+        pararef[0].style.color="green";
+        pararef[1].style.backgroundColor = "yellow";
+        pararef[2].style.border="5px solid black"
+    </script>
+</body>
+</html>

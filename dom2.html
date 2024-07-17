@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+</head>
+<body>
+    <h1 id="one">Welcome to Pentagoanspace</h1>
+    <p id="two"></p>
+    <h1 id="three">Welcome to Pentagoanspace</h1>
+    <button onclick="ChangeContent()">Click Here</button>
+
+    <script> 
+        //to access a html element with the help of id attribute we use document.getElementById()
+        var h1ref = document.getElementById("one");
+        console.log(h1ref);
+
+        //innerHtml and textcontent are used to add content to html element using javascript
+        h1ref.innerHTML="Welcome to javascript class";
+
+        var pref = document.getElementById("two")
+        pref.textContent = "hi hello everyone good morning"
+
+
+        function ChangeContent() {
+            var href = document.getElementById('three');
+            href.innerHTML="Thank you for visiting";
+        }
+    </script>
+</body>
+</html>
