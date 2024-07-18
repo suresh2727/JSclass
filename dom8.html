@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM8</title>
+</head>
+<body id="body">
+    <script>
+        var h1ref = document.createElement("h1")
+        h1ref.innerHTML="Welcome to PentagoanSpace"
+
+        h1ref.style.background = "yellow"
+        h1ref.style.border = "5px solid blue"
+        h1ref.style.color = "red"
+        h1ref.style.textAlign = "center"
+
+        var body = document.getElementById('body')
+        body.appendChild(h1ref);
+
+
+        var btn = document.createElement('button')
+        btn.innerHTML = "click here"
+        body.appendChild(btn)
+        
+
+
+    </script>
+</body>
+</html>

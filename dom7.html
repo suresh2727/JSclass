@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom7</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pentagoanspacae</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas voluptatem sed laborum, sequi culpa mollitia perspiciatis illum quod voluptates, explicabo adipisci quis hic ratione vero ab maiores, animi vel!</p>
+
+    <h1>Hello Everyone</h1>
+
+    <h4 class="four">this is the heading</h4>
+    <h4 class="four">this is h4</h4>
+
+    <p id="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, itaque.</p>
+    <p id="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque officia amet dignissimos voluptates nesciunt quae, provident eius odio accusantium consectetur.</p>
+    <script>
+        // var res  = document.querySelector('h1')
+        // console.log(res);
+
+        // var res1 = document.querySelector('p')
+        // console.log(res1);
+
+        // var res2 = document.querySelector('.four')
+        // console.log(res2);
+
+
+        // var res3 = document.querySelector('#one')
+        // console.log(res3);
+
+
+        var res = document.querySelectorAll('h1')
+        console.log(res);
+        res[0].style.color="yellow"
+
+        var res1 = document.querySelectorAll('p')
+
+        for (const iterator of res1) {
+            iterator.style.color="red"
+        }
+
+
+        var res2 = document.querySelectorAll('#one')
+        console.log(res2);
+    </script>
+</body>
+</html>
