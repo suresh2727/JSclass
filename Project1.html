@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+</head>
+<style>
+    div{
+        margin: 90px auto;
+        text-align: center;
+    }
+
+    button{
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <div>
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9_7MWQnkUDmiKEnY4iHEvuxcJI2-lyZRETA&s" height=400 width="400">
+
+        <br><br>
+
+        <button id="btn1" onclick="ChangetoReact()">React</button>
+        <button id="btn2" onclick="ChangetoAngula()">Angular</button>
+    </div>
+
+    <script>
+        var imageref = document.getElementById('image')
+        function ChangetoAngula() {
+            imageref.src="https://as2.ftcdn.net/v2/jpg/02/95/03/85/1000_F_295038583_mn0uxJ6A0YO57HA4xXQqHFUjiW1BcqBE.jpg"
+        }
+
+        function ChangetoReact() {
+            imageref.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9_7MWQnkUDmiKEnY4iHEvuxcJI2-lyZRETA&s"
+        }
+
+        
+
+
+
+
+    
+        
+    </script>
+</body>
+</html>

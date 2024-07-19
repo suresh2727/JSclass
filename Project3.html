@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3</title>
+</head>
+<body id="body">
+    <div>
+        <h1>Dom element</h1>
+        <button onclick="CreateButton()">Create Dom Button</button>
+
+    </div>
+
+    <script>
+        function CreateButton() {
+            var body = document.getElementById('body')
+           var h2ref = document.createElement('h2')
+           var btnref = document.createElement('button')
+
+           h2ref.innerHTML="UI is created using Javascript"
+           btnref.innerHTML = "Javascript btn"
+           
+
+           btnref.style.backgroundColor="darkred"
+           btnref.style.border='none'
+           btnref.style.color="white"
+           btnref.style.padding = "15px 25px"
+
+
+           body.appendChild(h2ref)
+           body.appendChild(btnref)
+
+            btnref.onclick=function(){
+                h2ref.remove()
+                btnref.remove()
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
