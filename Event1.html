@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event1</title>
+</head>
+<body id="body">
+    <button onclick="onbtnClick()">
+        Click here
+    </button>
+    <button onclick="Alertcall()">
+        ALERT
+    </button>
+    <script>
+        function onbtnClick() {
+            var para = document.createElement('p');
+            para.innerHTML = "Hello everyone i am generated because you clicked";
+            var body = document.getElementById('body');
+            body.appendChild(para);
+            
+        }
+
+        function Alertcall() {
+           alert("hello Good morning");
+           
+        }
+
+
+    </script>
+</body>
+</html>
