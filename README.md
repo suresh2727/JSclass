@@ -1,1 +1,2 @@
-Javascript Class......
+Javascript Class Work Pentagoan Space
+
